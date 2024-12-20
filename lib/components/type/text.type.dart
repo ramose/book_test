@@ -3,18 +3,25 @@ import 'package:flutter/material.dart';
 
 class TextType extends StatelessWidget {
   final String content;
+  final double fontSize;
 
   const TextType({
     super.key,
     required this.content,
+    this.fontSize = 16,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      maxLines: 15,
-      content,
-      overflow: TextOverflow.ellipsis,
+    return Center(
+      child: Text(
+        maxLines: 20,
+        content,
+        overflow: TextOverflow.ellipsis,
+        style: TextStyle(
+          fontSize: fontSize,
+        ),
+      ),
     );
   }
 }

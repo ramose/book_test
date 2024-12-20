@@ -1,4 +1,4 @@
-import 'package:book_test/main_book.dart';
+import 'package:book_test/components/book.comp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainBook(),
+      home: const BookComp(),
     );
   }
 }
